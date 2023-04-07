@@ -136,3 +136,55 @@ The Routes component is used to define the routes for the application. It listen
     What is the purpose of the Route component?
 
 The Route component is used to define a single route for the application. It specifies the path for the route and the component to render when the path is matched.
+
+    Here's an example of how to set up a createApi query
+
+import { createApi } from '@reduxjs/toolkit/query';
+
+const apiSlice = createApi({
+reducerPath: 'api',
+baseQuery: fetchBaseQuery({ baseUrl: 'https://api.example.com' }),
+endpoints: (builder) => ({
+getUsers: builder.query({
+query: () => '/users',
+}),
+}),
+});
+
+export const { useGetUsersQuery } = apiSlice;
+
+    importing useGetUsersQuery
+
+import { useGetUsersQuery } from './apiSlice';
+
+function UsersList() {
+const { data, error, isLoading } = useGetUsersQuery();
+
+if (isLoading) {
+return <div>Loading...</div>;
+}
+
+if (error) {
+return <div>Error: {error.message}</div>;
+}
+
+return (
+
+<ul>
+{data.map((user) => (
+<li key={user.id}>{user.name}</li>
+))}
+</ul>
+);
+}
+
+    In this example, we use the useGetUsersQuery hook to execute the
+
+getUsers query and retrieve the data. The hook returns an object that includes the data , error , and isLoading properties, which we can use to render the appropriate content in our component.
+
+    backend
+
+mkdir server
+cd server
+npm init -y //initialise package with default settings
+yarn add express body-parser cors dotenv helmet morgan mongoose mongoose-currency
