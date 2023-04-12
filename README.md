@@ -5,7 +5,7 @@ https://github.com/ed-roh/finance-app
 Build A MERN Finance Dashboard App | Machine Learning, Typescript, React, Node, MUI, Deployment
 https://www.youtube.com/watch?v=uoJ0Tv-BFcQ&ab_channel=EdRoh
 
-## starting up project and installations
+# starting up project and installations
 
 yarn create vite
 project name ->client
