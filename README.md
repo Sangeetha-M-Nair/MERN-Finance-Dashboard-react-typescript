@@ -52,17 +52,21 @@ in tsconfig.json add "types":["vite/client"] to use .env without giving errors
 
 ## we have to do absolute import that are easier to digest
 
-yarn add -D @types/node
+`yarn add -D @types/node`
 
 so
-in vite.config file import path from "path";
-resolve: {
-alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
-},
-in tsconfig.json
-"paths": {
-"@/_": ["./src/_"]
-},
+ ## in vite.config file 
+
+    import path from "path";
+    resolve: {
+    alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
+    },
+    
+## in tsconfig.json
+
+    "paths": {
+    "@/_": ["./src/_"]
+    },`
 
 ## theming
 
@@ -182,9 +186,12 @@ return (
 
 getUsers query and retrieve the data. The hook returns an object that includes the data , error , and isLoading properties, which we can use to render the appropriate content in our component.
 
-    backend
+**backend------------------------------------------**
 
-mkdir server
-cd server
-npm init -y //initialise package with default settings
-yarn add express body-parser cors dotenv helmet morgan mongoose mongoose-currency
+    `mkdir server
+    cd server
+    npm init -y //initialise package with default settings
+    yarn add express body-parser cors dotenv helmet morgan mongoose mongoose-currency`
+
+For diagrams for data modelling can use
+`https://lucid.app/documents#/dashboard`
