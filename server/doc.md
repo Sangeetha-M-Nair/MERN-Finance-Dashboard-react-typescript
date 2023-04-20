@@ -22,3 +22,21 @@ The third line sets up the bodyParser middleware to parse incoming JSON data in 
 
 first line sets up the bodyParser middleware to parse incoming JSON data.
 The second line sets up the bodyParser middleware to parse incoming URL-encoded data with the "extended" option set to false, which means that the values can be strings or arrays but not nested objects.
+
+        & . targets child component
+
+         <Box
+                mt="0.5rem"
+                p="0 0.5rem"
+                height="75%"
+                sx={{
+                    "& .MuiDataGrid-root": {
+                        color: palette.grey[300],
+                        border: "none",
+                    },
+
+                }}
+            >
+                <DataGrid /></Box>
+
+so this targets datagrid classes
