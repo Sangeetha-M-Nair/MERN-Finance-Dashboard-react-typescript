@@ -10,11 +10,12 @@ Node.js
 Installing
 
 cd client
-npm install 
+
+    npm install 
 
 Running
 
-npm run dev 
+    npm run dev 
 
 Usage
 Instructions on how to use the project.
