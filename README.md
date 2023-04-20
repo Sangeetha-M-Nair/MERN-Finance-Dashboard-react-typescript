@@ -1,38 +1,38 @@
-Project Name
+**Project Name**
 
-**MERN FINANCE DASHBOARD**
+# MERN FINANCE DASHBOARD
 
 Getting Started
 clone the repo
 
-Prerequisites
+**Prerequisites**
 Node.js 
 
-Installing
+**Installing**
 
 cd client
 
     npm install 
 
-Running
+**Running**
 
     npm run dev 
 
-Usage
+**Usage**
 Instructions on how to use the project.
 
-Built With
+**Built With**
 
 This code is using React, React Router, Material-UI, and CSS Baseline.
 
-Contributing
-Guidelines for contributing to the project.
+**Contributing**
+<!-- Guidelines for contributing to the project. -->
 
-Versioning
+**Versioning**
 github
 
-Authors
+**Authors**
 Sangeetha M Nair
 
-License
+**License**
 Explanation of the project's license.
