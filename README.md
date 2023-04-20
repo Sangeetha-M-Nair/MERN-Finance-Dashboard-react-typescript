@@ -2,21 +2,22 @@
 
 # MERN FINANCE DASHBOARD
 
-Getting Started
+**Getting Started**
+
 clone the repo
 
 **Prerequisites**
-Node.js 
+Node.js
 
 **Installing**
 
 cd client
 
-    npm install 
+    npm install
 
 **Running**
 
-    npm run dev 
+    npm run dev
 
 **Usage**
 Instructions on how to use the project.
@@ -26,6 +27,7 @@ Instructions on how to use the project.
 This code is using React, React Router, Material-UI, and CSS Baseline.
 
 **Contributing**
+
 <!-- Guidelines for contributing to the project. -->
 
 **Versioning**
