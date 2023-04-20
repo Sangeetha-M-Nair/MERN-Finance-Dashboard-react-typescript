@@ -1,5 +1,6 @@
- Project Name
-MERN FINANCE DASHBOARD
+Project Name
+
+**MERN FINANCE DASHBOARD**
 
 Getting Started
 clone the repo
@@ -21,6 +22,7 @@ Usage
 Instructions on how to use the project.
 
 Built With
+
 This code is using React, React Router, Material-UI, and CSS Baseline.
 
 Contributing
